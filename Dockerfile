@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt update && apt install openjdk-11-jre-dcevm -y && apt install zip -y && apt install wget -y &&  apt install zip -y
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.91/bin/apache-tomcat-8.5.91.zip
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.94/bin/apache-tomcat-8.5.94.zip
 RUN unzip apache-tomcat-8.5.91.zip
 RUN mv apache-tomcat-8.5.91 /mnt/tomcat
 COPY context.xml /mnt/tomcat/conf/
